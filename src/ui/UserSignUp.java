@@ -11,20 +11,18 @@ import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
-import services.UserService;
 
 public class UserSignUp extends Application{
 
-	private UserService userService; // Assuming you have an instance of UserService
+	private UserController userController; 
 
     public UserSignUp() {
-        this.userService = userService;
+        this.userController = userController;
     }
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		 UserService userService = new UserService(new UserController());
 	     UserSignUp userSignup = new UserSignUp();
 	        
 	     launch(args);
@@ -73,7 +71,7 @@ public class UserSignUp extends Application{
 	
 	private void handleSignup(String fullName, String email, String password, String area) {
 		
-        userService.registerUser(fullName, email, password, area);
+		userController.registerUser(fullName, email, password, area);
 
         System.out.println("User registration successful!");
     }
