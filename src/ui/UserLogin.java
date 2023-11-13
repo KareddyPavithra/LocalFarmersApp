@@ -11,15 +11,14 @@ import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
-import services.UserService;
 
 public class UserLogin extends Application{
 
 	
-	private UserService userService;
+	private UserController userController;
 	
 	public UserLogin() {
-		this.userService = userService;
+		this.userController = userController;
 	}
 	
 	@Override
@@ -52,7 +51,7 @@ public class UserLogin extends Application{
 	
 	private void handleLogin(String email, String password) {
         
-        boolean isAuthenticated = userService.authenticateUser(email, password);
+        boolean isAuthenticated = userController.authenticateUser(email, password);
 
         if (isAuthenticated) {
             System.out.println("Login successful!");
@@ -63,7 +62,6 @@ public class UserLogin extends Application{
 	
 	public static void main(String[] args) {
 		
-		UserService userService = new UserService(new UserController());
         UserLogin userLogin = new UserLogin();
         
 		launch(args);
