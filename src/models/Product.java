@@ -55,6 +55,7 @@ public class Product {
     public void setVendor(Vendor vendor) {
         this.vendor = vendor;
     }
+  
     @Override
     public String toString() {
         return "Product [name=" + name + ", quantity=" + quantity + ", price=" + price + ", type=" + type + ", vendor="
@@ -63,3 +64,9 @@ public class Product {
 
 }
 
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
