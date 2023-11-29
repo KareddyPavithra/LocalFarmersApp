@@ -1,69 +1,93 @@
 package ui;
 
-import controllers.UserController;
-import javafx.application.Application;
-import javafx.geometry.Insets;
-import javafx.geometry.Pos;
+import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
-import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
+import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+
+import java.io.IOException;
+
+import controllers.UserController;
+import javafx.application.Application;
+import javafx.event.ActionEvent;
+
 
 public class UserLogin extends Application{
 
+	@FXML
+	private TextField usernameField;
+	
+	@FXML
+	private PasswordField passwordField;
+	
+	@FXML
+	private Button loginButton;
+	
+	@FXML
+	private Label errorLabel;
 	
 	private UserController userController;
-	
-	public UserLogin() {
-		this.userController = userController;
-	}
 	
 	@Override
 	public void start(Stage primaryStage) {
 		// TODO Auto-generated method stub
 		
-		primaryStage.setTitle("User Login");
-		
-		Label emailLabel = new Label("Email:");
-        TextField emailTextField = new TextField();
-
-        Label passwordLabel = new Label("Password:");
-        PasswordField passwordField = new PasswordField();
-
-        Button loginButton = new Button("Login");
-		
-        loginButton.setOnAction(e -> handleLogin(emailTextField.getText(), passwordField.getText()));
-
-        VBox layout = new VBox(10);
-        layout.setPadding(new Insets(20, 20, 20, 20));
-        layout.setAlignment(Pos.CENTER);
-
-        layout.getChildren().addAll(emailLabel, emailTextField, passwordLabel, passwordField, loginButton);
-
-        Scene scene = new Scene(layout, 300, 200);
-        primaryStage.setScene(scene);
-        primaryStage.show();
+		try {
+			FXMLLoader loader = new FXMLLoader(getClass().getResource("user_login.fxml"));
+			loader.setController(this);
+			Parent root = loader.load();
+			
+			Scene scene = new Scene(root);
+			primaryStage.setScene(scene);
+			primaryStage.setTitle("User Login");
+			
+			primaryStage.show();
+			
+		} catch(IOException e) {
+			
+			e.printStackTrace();
+		}
 		
 	}
 	
-	private void handleLogin(String email, String password) {
+	
+	@FXML
+	private void handleLogin() {
         
-        boolean isAuthenticated = userController.authenticateUser(email, password);
-
-        if (isAuthenticated) {
-            System.out.println("Login successful!");
-        } else {
-            System.out.println("Login failed. Please check your email and password.");
-        }
-    }
+        String email = usernameField.getText();
+        String password = passwordField.getText();
+        
+	    if(userController.authenticateUser(email, password)) {
+	    	openMainPage();
+	    } else {
+	    	errorLabel.setText("Invalid email or password");
+	    }
+	}
+	
+	private void openMainPage() {
+		
+		try {
+			FXMLLoader loader = new FXMLLoader(getClass().getResource("main_page.fxml"));
+			Parent root = loader.load();
+			
+			Scene scene = new Scene(root);
+			
+			Stage stage = (Stage) loginButton.getScene().getWindow();
+			stage.setScene(scene);
+			stage.setTitle("Main Page");
+			
+		} catch(IOException e) {
+			e.printStackTrace();
+		}
+	}
 	
 	public static void main(String[] args) {
-		
-        UserLogin userLogin = new UserLogin();
-        
+		        
 		launch(args);
 	}
 
