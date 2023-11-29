@@ -10,7 +10,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.UserController">
    <children>
       <AnchorPane layoutX="6.0" layoutY="6.0" prefHeight="590.0" prefWidth="790.0" style="-fx-background-color: #ffffff;">
          <children>
@@ -34,12 +34,13 @@
                   <Font size="16.0" />
                </font>
             </Label>
-            <ComboBox layoutX="460.0" layoutY="348.0" prefHeight="38.0" prefWidth="234.0" />
-            <PasswordField fx:id="pswd" layoutX="458.0" layoutY="252.0" prefHeight="38.0" prefWidth="234.0" />
-            <TextField fx:id="usrname" layoutX="454.0" layoutY="155.0" prefHeight="38.0" prefWidth="233.0" />
-            <Button fx:id="login_btn" layoutX="468.0" layoutY="415.0" mnemonicParsing="false" onAction="#login" prefHeight="32.0" prefWidth="237.0" style="-fx-background-color: #0171DC;" text="Log In" textFill="WHITE" />
+            <ComboBox fx:id="roleComboBox" layoutX="460.0" layoutY="348.0" prefHeight="38.0" prefWidth="234.0" />
+            <PasswordField fx:id="passwordField" layoutX="458.0" layoutY="252.0" prefHeight="38.0" prefWidth="234.0" />
+            <TextField fx:id="usernameField" layoutX="454.0" layoutY="155.0" prefHeight="38.0" prefWidth="233.0" />
+            <Button fx:id="loginButton" layoutX="468.0" layoutY="415.0" mnemonicParsing="false" onAction="#handleLogin" prefHeight="32.0" prefWidth="237.0" style="-fx-background-color: #0171DC;" text="Log In" textFill="WHITE" />
             <Label layoutX="517.0" layoutY="467.0" text="Don't have an account?" />
-            <Button fx:id="btn_register" layoutX="532.0" layoutY="497.0" mnemonicParsing="false" onAction="#register" style="-fx-background-color: #ffffff; -fx-border-color: #0171DC; -fx-border-radius: 2;" text="Register Now" textFill="#0171dc" />
+            <Button fx:id="registerButton" layoutX="532.0" layoutY="497.0" mnemonicParsing="false" onAction="#handleRegister" style="-fx-background-color: #ffffff; -fx-border-color: #0171DC; -fx-border-radius: 2;" text="Register Now" textFill="#0171dc" />
+            <Label fx:id="errorLabel" layoutX="200.0" layoutY="500.0" prefHeight="56.0" prefWidth="400.0" textFill="red" />
             <Label layoutX="454.0" layoutY="69.0" text="Log In">
                <font>
                   <Font name="System Bold" size="28.0" />
