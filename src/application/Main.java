@@ -5,6 +5,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.stage.Stage;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.image.Image;
 import javafx.scene.layout.BorderPane;
 
 
@@ -12,10 +13,10 @@ public class Main extends Application {
 	@Override
 	public void start(Stage primaryStage) {
 		try {
-			Parent root = FXMLLoader.load(getClass().getResource("user_signup.fxml"));
-			Scene scene = new Scene(root,800,600);
-			scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
-			primaryStage.setScene(scene);
+			Parent root1 = FXMLLoader.load(getClass().getResource("Login.fxml"));
+			Scene scene1 = new Scene(root1,800,600);
+			primaryStage.setScene(scene1);
+			//primaryStage.getIcons().add(new Image("file:./assets/login2.jpeg"));
 			primaryStage.show();
 		} catch(Exception e) {
 			e.printStackTrace();

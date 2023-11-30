@@ -1,72 +1,59 @@
-//package application;
-//
-//import models.Vendor;
-//
-//public class Product {
-//	
-//    private String name;
-//    private int quantity;
-//    private double price;
-//    private String type;
-//    private Vendor vendor;
-//
-//    public Product(String name, int quantity, double price, String type, Vendor vendor) {
-//        this.name = name;
-//        this.quantity = quantity;
-//        this.price = price;
-//        this.type = type;
-//        this.vendor = vendor;
-//    }
-//
-//    public String getName() {
-//        return name;
-//    }
-//
-//    public void setName(String name) {
-//        this.name = name;
-//    }
-//
-//    public int getQuantity() {
-//        return quantity;
-//    }
-//
-//    public void setQuantity(int quantity) {
-//        this.quantity = quantity;
-//    }
-//
-//    public double getPrice() {
-//        return price;
-//    }
-//
-//    public void setPrice(double price) {
-//        this.price = price;
-//    }
-//
-//    public String getType() {
-//        return type;
-//    }
-//
-//    public void setType(String type) {
-//        this.type = type;
-//    }
-//
-//    public Vendor getvendor() {
-//        return vendor;
-//    }
-//
-//    public void setVendor(Vendor vendor) {
-//        this.vendor = vendor;
-//    }
-//  
-//    @Override
-//    public String toString() {
-//        return "Product [name=" + name + ", quantity=" + quantity + ", price=" + price + ", type=" + type + ", vendor="
-//                + vendor + "]";
-//    }
-//
-//	public static void main(String[] args) {
-//		// TODO Auto-generated method stub
-//
-//	}
-//
-//}
+package application;
+import java.util.List;
+
+public class Product {
+	
+    private String category;
+    private int aisle;
+    private String name;
+    private double price;
+    private int count;
+    private String image;
+
+    public Product(String category, int aisle, String name, double price, int count, String image) {
+        this.category = category;
+        this.aisle = aisle;
+        this.name = name;
+        this.price = price;
+        this.count = count;
+        this.image = image;
+    }
+
+	
+	public String getCategory() {
+		return this.category;
+	}
+	
+	public int getAisle() {
+		return this.aisle;
+	}
+	
+	public String getName() {
+		return this.name;
+	}
+
+	public double getPrice() {
+		return this.price;
+	}
+	
+	public int getCount() {
+		return this.count;
+	}
+	
+	public void setCount(int cnt) {
+		this.count = cnt;
+	}
+	
+	public String getImage() {
+		return this.image;
+	}
+	
+	public static Product valueOf() {
+		return null;
+	}
+	
+	public Product getObject() {
+		Product obj = new Product(this.category, this.aisle, this.name, this.price, this.count, this.image);
+		return obj;
+	}
+}

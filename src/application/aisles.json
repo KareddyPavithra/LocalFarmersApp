@@ -1,0 +1,181 @@
+{
+	"aisles": [{
+			"number": "1",
+			"category": "Fruits",
+			"items": [{
+					"name": "Apples",
+					"price": "4.99",
+					"image": "Appless.jpeg",
+					"count": "23"
+					
+				},
+				{
+					"name": "Oranges",
+					"price": "5.99",
+					"image": "oranges.jpg",
+					"count": "5"
+				},
+				{
+					"name": "Bananas",
+					"price": "2.99",
+					"image": "banana.jpg",
+					"count": "18"
+				},
+				{
+					"name": "Grapes",
+					"price": "7.99",
+					"image": "grapes.jpg",
+					"count": "12"
+				}
+			]
+		},
+		{
+			"number": "2",
+			"category": "Vegetables",
+			"items": [{
+					"name": "Tomatoes",
+					"price": "3.99",
+					"image": "tomato.jpeg",
+					"count": "20"
+				},
+				{
+					"name": "Potatoes",
+					"price": "5.99",
+					"image": "potato.jpeg",
+					"count": "16"
+				},
+				{
+					"name": "Capsicum",
+					"price": "7.00",
+					"image": "capsicum.jpg",
+					"count": "14"
+				},
+				{
+					"name": "Spinach",
+					"price": "2.99",
+					"image": "spinach.jpg",
+					"count": "5"
+				}
+			]
+		},
+		{
+			"number": "3",
+			"category": "Dairy",
+			"items": [{
+					"name": "Milk",
+					"price": "5.99",
+					"image": "milk.jpeg",
+					"count": "8"
+				},
+				{
+					"name": "Cheese",
+					"price": "4.79",
+					"image": "cheese.jpeg",
+					"count": "19"
+				},
+				{
+					"name": "Yogurt",
+					"price": "3.99",
+					"image": "yogurt.jpeg",
+					"count": "7"
+				},
+				{
+					"name": "Butter",
+					"price": "4.39",
+					"image": "butter.jpg",
+					"count": "6"
+				}
+			]
+		},
+		{
+			"number": "4",
+			"category": "Meat",
+			"items": [{
+					"name": "Chicken",
+					"price": "15.79",
+					"image": "chicken.jpeg",
+					"count": "11"
+				},
+				{
+					"name": "Fish",
+					"price": "17.89",
+					"image": "fish.jpeg",
+					"count": "15"
+				},
+				{
+					"name": "Shrimp",
+					"price": "7.59",
+					"image": "shrimp.jpeg",
+					"count": "22"
+				},
+				{
+					"name": "Pork",
+					"price": "22.90",
+					"image": "pork.jpeg",
+					"count": "10"
+				}
+			]
+		},
+		{
+			"number": "5",
+			"category": "Flowers",
+			"items": [{
+				"name": "Red Roses",
+				"price": "17.99",
+				"image": "roses.jpg",
+				"count": "9"
+			},
+			{
+				"name": "Tulips",
+				"price": "20.99",
+				"image": "tulips.jpg",
+				"count": "9"
+			},
+			{
+				"name": "Daisy",
+				"price": "15.99",
+				"image": "daisy.jpeg",
+				"count": "9"
+			},
+			{
+				"name": "Lily",
+				"price": "25.00",
+				"image": "lily.jpeg",
+				"count": "9"
+			}
+
+		]
+		},
+		{
+			"number": "6",
+			"category": "Bakery",
+			"items": [{
+				"name": "Breads",
+				"price": "3.79",
+				"image": "bread.jpg",
+				"count": "2"
+			},
+			{
+				"name": "Donuts",
+				"price": "4.99",
+				"image": "donuts.jpg",
+				"count": "2"
+			},
+			{
+				"name": "Cookies",
+				"price": "7.29",
+				"image": "cookies.jpg",
+				"count": "2"
+			},
+			{
+				"name": "Bagels",
+				"price": "6.49",
+				"image": "bagels.jpeg",
+				"count": "2"
+			}
+
+		]
+		
+		}
+	]
+}
