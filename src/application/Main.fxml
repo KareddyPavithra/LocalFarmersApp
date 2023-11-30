@@ -31,22 +31,22 @@
                            <children>
                               <ImageView fitHeight="110.0" fitWidth="120.0" layoutX="44.0" layoutY="34.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
                                  <image>
-                                    <Image url="@../images/Appless.jpeg" />
+                                    <Image url="@../assets/Appless.jpeg" />
                                  </image>
                               </ImageView>
-                              <ImageView fitHeight="110.0" fitWidth="120.0" layoutX="608.0" layoutY="35.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                              <ImageView fitHeight="110.0" fitWidth="120.0" layoutX="595.0" layoutY="25.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
                                  <image>
-                                    <Image url="@../images/grapes.jpg" />
+                                    <Image url="@../assets/grapes.jpg" />
                                  </image>
                               </ImageView>
                               <ImageView fitHeight="110.0" fitWidth="120.0" layoutX="426.0" layoutY="33.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
                                  <image>
-                                    <Image url="@../images/banana.jpg" />
+                                    <Image url="@../assets/banana.jpg" />
                                  </image>
                               </ImageView>
                               <ImageView fitHeight="110.0" fitWidth="120.0" layoutX="234.0" layoutY="34.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
                                  <image>
-                                    <Image url="@../images/oranges.jpg" />
+                                    <Image url="@../assets/oranges.jpg" />
                                  </image>
                               </ImageView>
                               <Button fx:id="Button0" layoutX="43.0" layoutY="152.0" mnemonicParsing="false" onAction="#buttonClick0" style="-fx-background-color: #0171DC;" text="+ Add" textFill="WHITE">
@@ -55,7 +55,7 @@
                                  </font>
                               </Button>
                               <Text fx:id="prod0" layoutX="43.0" layoutY="190.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Apples" />
-                              <Text fill="#001eff" layoutX="45.0" layoutY="230.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Farmer 1">
+                              <Text fill="#001eff" layoutX="45.0" layoutY="230.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Asile A">
                                  <font>
                                     <Font size="12.0" />
                                  </font>
@@ -76,7 +76,7 @@
                                  </font>
                               </Button>
                               <Text fx:id="prod1" layoutX="234.0" layoutY="189.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Oranges" />
-                              <Text fill="#001eff" layoutX="236.0" layoutY="229.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Farmer 2">
+                              <Text fill="#001eff" layoutX="236.0" layoutY="229.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Asile A">
                                  <font>
                                     <Font size="12.0" />
                                  </font>
@@ -97,7 +97,7 @@
                                  </font>
                               </Button>
                               <Text fx:id="prod2" layoutX="424.0" layoutY="188.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bananas" />
-                              <Text fill="#001eff" layoutX="426.0" layoutY="228.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Farmer  1">
+                              <Text fill="#001eff" layoutX="426.0" layoutY="228.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Asile A">
                                  <font>
                                     <Font size="12.0" />
                                  </font>
@@ -114,7 +114,7 @@
                                  </font>
                               </Button>
                               <Text fx:id="prod3" layoutX="607.0" layoutY="188.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Grapes" />
-                              <Text fill="#001eff" layoutX="609.0" layoutY="228.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Farmer 3">
+                              <Text fill="#001eff" layoutX="609.0" layoutY="228.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Asile A">
                                  <font>
                                     <Font size="12.0" />
                                  </font>
@@ -148,22 +148,22 @@
                            <children>
                               <ImageView fitHeight="103.0" fitWidth="120.0" layoutX="44.0" layoutY="54.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
                                  <image>
-                                    <Image url="@../images/tomato.jpeg" />
+                                    <Image url="@../assets/tomato.jpeg" />
                                  </image>
                               </ImageView>
                               <ImageView fitHeight="110.0" fitWidth="120.0" layoutX="608.0" layoutY="35.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
                                  <image>
-                                    <Image url="@../images/spinach.jpg" />
+                                    <Image url="@../assets/spinach.jpg" />
                                  </image>
                               </ImageView>
                               <ImageView fitHeight="110.0" fitWidth="120.0" layoutX="426.0" layoutY="33.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
                                  <image>
-                                    <Image url="@../images/capsicum.jpg" />
+                                    <Image url="@../assets/capsicum.jpg" />
                                  </image>
                               </ImageView>
                               <ImageView fitHeight="110.0" fitWidth="120.0" layoutX="234.0" layoutY="48.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
                                  <image>
-                                    <Image url="@../images/potato.jpeg" />
+                                    <Image url="@../assets/potato.jpeg" />
                                  </image>
                               </ImageView>
                               <Button fx:id="Button4" layoutX="43.0" layoutY="152.0" mnemonicParsing="false" onAction="#buttonClick0" style="-fx-background-color: #0171DC;" text="+ Add" textFill="WHITE">
@@ -172,7 +172,7 @@
                                  </font>
                               </Button>
                               <Text fx:id="prod4" layoutX="43.0" layoutY="190.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tomatoes" />
-                              <Text fill="#001eff" layoutX="45.0" layoutY="230.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Farmer 1">
+                              <Text fill="#001eff" layoutX="45.0" layoutY="230.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Asile B">
                                  <font>
                                     <Font size="12.0" />
                                  </font>
@@ -193,7 +193,7 @@
                                  </font>
                               </Button>
                               <Text fx:id="prod5" layoutX="234.0" layoutY="189.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Potatoes" />
-                              <Text fill="#001eff" layoutX="236.0" layoutY="229.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Farmer 2">
+                              <Text fill="#001eff" layoutX="236.0" layoutY="229.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Asile B">
                                  <font>
                                     <Font size="12.0" />
                                  </font>
@@ -214,7 +214,7 @@
                                  </font>
                               </Button>
                               <Text fx:id="prod6" layoutX="424.0" layoutY="188.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Capsicum" />
-                              <Text fill="#001eff" layoutX="426.0" layoutY="228.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Farmer 2">
+                              <Text fill="#001eff" layoutX="426.0" layoutY="228.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Asile B">
                                  <font>
                                     <Font size="12.0" />
                                  </font>
@@ -231,7 +231,7 @@
                                  </font>
                               </Button>
                               <Text fx:id="prod7" layoutX="607.0" layoutY="188.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Spinach" />
-                              <Text fill="#001eff" layoutX="609.0" layoutY="228.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Farmer 3">
+                              <Text fill="#001eff" layoutX="609.0" layoutY="228.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Asile B">
                                  <font>
                                     <Font size="12.0" />
                                  </font>
@@ -264,22 +264,22 @@
                            <children>
                               <ImageView fitHeight="110.0" fitWidth="120.0" layoutX="44.0" layoutY="34.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
                                  <image>
-                                    <Image url="@../images/milk.jpeg" />
+                                    <Image url="@../assets/milk.jpeg" />
                                  </image>
                               </ImageView>
                               <ImageView fitHeight="110.0" fitWidth="120.0" layoutX="608.0" layoutY="35.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
                                  <image>
-                                    <Image url="@../images/butter.jpg" />
+                                    <Image url="@../assets/butter.jpg" />
                                  </image>
                               </ImageView>
                               <ImageView fitHeight="110.0" fitWidth="120.0" layoutX="426.0" layoutY="33.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
                                  <image>
-                                    <Image url="@../images/yogurt.jpeg" />
+                                    <Image url="@../assets/yogurt.jpeg" />
                                  </image>
                               </ImageView>
                               <ImageView fitHeight="110.0" fitWidth="120.0" layoutX="234.0" layoutY="34.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
                                  <image>
-                                    <Image url="@../images/cheese.jpeg" />
+                                    <Image url="@../assets/cheese.jpeg" />
                                  </image>
                               </ImageView>
                               <Button fx:id="Button8" layoutX="43.0" layoutY="152.0" mnemonicParsing="false" onAction="#buttonClick0" style="-fx-background-color: #0171DC;" text="+ Add" textFill="WHITE">
@@ -288,7 +288,7 @@
                                  </font>
                               </Button>
                               <Text fx:id="prod8" layoutX="43.0" layoutY="190.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Milk" />
-                              <Text fill="#001eff" layoutX="45.0" layoutY="230.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Farmer 1">
+                              <Text fill="#001eff" layoutX="45.0" layoutY="230.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Asile C">
                                  <font>
                                     <Font size="12.0" />
                                  </font>
@@ -309,7 +309,7 @@
                                  </font>
                               </Button>
                               <Text fx:id="prod9" layoutX="234.0" layoutY="189.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cheese" />
-                              <Text fill="#001eff" layoutX="236.0" layoutY="229.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Farmer 1">
+                              <Text fill="#001eff" layoutX="236.0" layoutY="229.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Asile C">
                                  <font>
                                     <Font size="12.0" />
                                  </font>
@@ -330,7 +330,7 @@
                                  </font>
                               </Button>
                               <Text fx:id="prod10" layoutX="424.0" layoutY="188.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Yogurt" />
-                              <Text fill="#001eff" layoutX="426.0" layoutY="228.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Farmer 2">
+                              <Text fill="#001eff" layoutX="426.0" layoutY="228.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Asile C">
                                  <font>
                                     <Font size="12.0" />
                                  </font>
@@ -347,7 +347,7 @@
                                  </font>
                               </Button>
                               <Text fx:id="prod11" layoutX="607.0" layoutY="188.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Butter" />
-                              <Text fill="#001eff" layoutX="609.0" layoutY="228.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Farmer 2">
+                              <Text fill="#001eff" layoutX="609.0" layoutY="228.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Asile C">
                                  <font>
                                     <Font size="12.0" />
                                  </font>
@@ -379,24 +379,24 @@
                      <content>
                         <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #ffffff;">
                            <children>
-                              <ImageView fitHeight="110.0" fitWidth="120.0" layoutX="40.0" layoutY="56.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                              <ImageView fitHeight="110.0" fitWidth="120.0" layoutX="39.0" layoutY="58.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
                                  <image>
-                                    <Image url="@../images/chicken.jpeg" />
+                                    <Image url="@../assets/chicken.jpeg" />
                                  </image>
                               </ImageView>
                               <ImageView fitHeight="110.0" fitWidth="120.0" layoutX="608.0" layoutY="35.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
                                  <image>
-                                    <Image url="@../images/pork.jpeg" />
+                                    <Image url="@../assets/pork.jpeg" />
                                  </image>
                               </ImageView>
                               <ImageView fitHeight="110.0" fitWidth="120.0" layoutX="426.0" layoutY="33.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
                                  <image>
-                                    <Image url="@../images/shrimp.jpeg" />
+                                    <Image url="@../assets/shrimp.jpeg" />
                                  </image>
                               </ImageView>
                               <ImageView fitHeight="110.0" fitWidth="120.0" layoutX="234.0" layoutY="47.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
                                  <image>
-                                    <Image url="@../images/fish.jpeg" />
+                                    <Image url="@../assets/fish.jpeg" />
                                  </image>
                               </ImageView>
                               <Button fx:id="Button12" layoutX="43.0" layoutY="152.0" mnemonicParsing="false" onAction="#buttonClick0" style="-fx-background-color: #0171DC;" text="+ Add" textFill="WHITE">
@@ -405,7 +405,7 @@
                                  </font>
                               </Button>
                               <Text fx:id="prod12" layoutX="43.0" layoutY="190.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Chicken" />
-                              <Text fill="#001eff" layoutX="45.0" layoutY="230.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Farmer 1">
+                              <Text fill="#001eff" layoutX="45.0" layoutY="230.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Asile D">
                                  <font>
                                     <Font size="12.0" />
                                  </font>
@@ -427,7 +427,7 @@
                                  </font>
                               </Button>
                               <Text fx:id="prod13" layoutX="234.0" layoutY="189.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fish" />
-                              <Text fill="#001eff" layoutX="236.0" layoutY="229.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Farmer 2">
+                              <Text fill="#001eff" layoutX="236.0" layoutY="229.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Asile D">
                                  <font>
                                     <Font size="12.0" />
                                  </font>
@@ -449,7 +449,7 @@
                                  </font>
                               </Button>
                               <Text fx:id="prod14" layoutX="424.0" layoutY="188.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Shrimp" />
-                              <Text fill="#001eff" layoutX="426.0" layoutY="228.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Farmer 3">
+                              <Text fill="#001eff" layoutX="426.0" layoutY="228.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Asile D">
                                  <font>
                                     <Font size="12.0" />
                                  </font>
@@ -466,7 +466,7 @@
                                  </font>
                               </Button>
                               <Text fx:id="prod15" layoutX="607.0" layoutY="188.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pork" />
-                              <Text fill="#001eff" layoutX="609.0" layoutY="228.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Farmer 3">
+                              <Text fill="#001eff" layoutX="609.0" layoutY="228.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Asile D">
                                  <font>
                                     <Font size="12.0" />
                                  </font>
@@ -500,24 +500,24 @@
                      <content>
                         <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #ffffff;">
                            <children>
-                              <ImageView fitHeight="110.0" fitWidth="120.0" layoutX="44.0" layoutY="34.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                              <ImageView fitHeight="110.0" fitWidth="120.0" layoutX="29.0" layoutY="36.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
                                  <image>
-                                    <Image url="@../images/roses.jpg" />
+                                    <Image url="@../assets/roses.jpg" />
                                  </image>
                               </ImageView>
-                              <ImageView fitHeight="110.0" fitWidth="120.0" layoutX="608.0" layoutY="50.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                              <ImageView fitHeight="110.0" fitWidth="120.0" layoutX="589.0" layoutY="34.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
                                  <image>
-                                    <Image url="@../images/lily.jpeg" />
+                                    <Image url="@../assets/lily.jpeg" />
                                  </image>
                               </ImageView>
-                              <ImageView fitHeight="110.0" fitWidth="120.0" layoutX="426.0" layoutY="48.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                              <ImageView fitHeight="110.0" fitWidth="120.0" layoutX="412.0" layoutY="27.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
                                  <image>
-                                    <Image url="@../images/daisy.jpeg" />
+                                    <Image url="@../assets/daisy.jpeg" />
                                  </image>
                               </ImageView>
-                              <ImageView fitHeight="110.0" fitWidth="120.0" layoutX="234.0" layoutY="39.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                              <ImageView fitHeight="110.0" fitWidth="120.0" layoutX="216.0" layoutY="34.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
                                  <image>
-                                    <Image url="@../images/tulips.jpg" />
+                                    <Image url="@../assets/tulips.jpg" />
                                  </image>
                               </ImageView>
                               <Button fx:id="Button16" layoutX="43.0" layoutY="152.0" mnemonicParsing="false" onAction="#buttonClick0" style="-fx-background-color: #0171DC;" text="+ Add" textFill="WHITE">
@@ -526,7 +526,7 @@
                                  </font>
                               </Button>
                               <Text fx:id="prod16" layoutX="43.0" layoutY="190.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Red Roses" />
-                              <Text fill="#001eff" layoutX="45.0" layoutY="230.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Farmer 1">
+                              <Text fill="#001eff" layoutX="45.0" layoutY="230.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Asile E">
                                  <font>
                                     <Font size="12.0" />
                                  </font>
@@ -548,7 +548,7 @@
                                  </font>
                               </Button>
                               <Text fx:id="prod17" layoutX="234.0" layoutY="189.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tulips" />
-                              <Text fill="#001eff" layoutX="236.0" layoutY="229.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Farmer 2">
+                              <Text fill="#001eff" layoutX="236.0" layoutY="229.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Asile E">
                                  <font>
                                     <Font size="12.0" />
                                  </font>
@@ -570,7 +570,7 @@
                                  </font>
                               </Button>
                               <Text fx:id="prod18" layoutX="424.0" layoutY="188.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Daisy" />
-                              <Text fill="#001eff" layoutX="426.0" layoutY="228.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Farmer 3">
+                              <Text fill="#001eff" layoutX="426.0" layoutY="228.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Asile E">
                                  <font>
                                     <Font size="12.0" />
                                  </font>
@@ -587,7 +587,7 @@
                                  </font>
                               </Button>
                               <Text fx:id="prod19" layoutX="607.0" layoutY="188.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Lily" />
-                              <Text fill="#001eff" layoutX="609.0" layoutY="228.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Farmer 4">
+                              <Text fill="#001eff" layoutX="609.0" layoutY="228.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Asile E">
                                  <font>
                                     <Font size="12.0" />
                                  </font>
@@ -617,6 +617,127 @@
                         </AnchorPane>
                      </content>
                   </Tab>
+                  <Tab text="Bakery">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #ffffff;">
+                           <children>
+                              <ImageView fitHeight="110.0" fitWidth="120.0" layoutX="44.0" layoutY="34.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../assets/bread.jpg" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="110.0" fitWidth="120.0" layoutX="608.0" layoutY="35.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../assets/bagels.jpeg" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="110.0" fitWidth="120.0" layoutX="426.0" layoutY="33.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../assets/cookies.jpg" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="110.0" fitWidth="120.0" layoutX="234.0" layoutY="34.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../assets/donuts.jpg" />
+                                 </image>
+                              </ImageView>
+                              <Button fx:id="Button20" layoutX="43.0" layoutY="152.0" mnemonicParsing="false" onAction="#buttonClick0" style="-fx-background-color: #0171DC;" text="+ Add" textFill="WHITE">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Button>
+                              <Text fx:id="prod20" layoutX="43.0" layoutY="190.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Breads" />
+                              <Text fill="#001eff" layoutX="45.0" layoutY="230.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Asile F">
+                                 <font>
+                                    <Font size="12.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="44.0" layoutY="210.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\$3.79">
+                                 <font>
+                                    <Font name="System Bold" size="13.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="85.0" layoutY="168.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-background-color: #fafafa;" wrappingWidth="26.66590118408203" />
+                              <Button fx:id="btn20" layoutX="115.0" layoutY="152.0" mnemonicParsing="false" onAction="#subtractButtonClick0" style="-fx-background-color: #fafafa;" textFill="WHITE">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="Button21" layoutX="234.0" layoutY="151.0" mnemonicParsing="false" onAction="#buttonClick0" style="-fx-background-color: #0171DC;" text="+ Add" textFill="WHITE">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Button>
+                              <Text fx:id="prod21" layoutX="234.0" layoutY="189.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Donuts" />
+                              <Text fill="#001eff" layoutX="236.0" layoutY="229.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Asile F">
+                                 <font>
+                                    <Font size="12.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="235.0" layoutY="209.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\$4.99">
+                                 <font>
+                                    <Font name="System Bold" size="13.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="277.0" layoutY="167.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-background-color: #fafafa;" wrappingWidth="26.66590118408203" />
+                              <Button fx:id="btn21" layoutX="308.0" layoutY="151.0" mnemonicParsing="false" style="-fx-background-color: #fafafa;" textFill="WHITE">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="Button22" layoutX="424.0" layoutY="150.0" mnemonicParsing="false" onAction="#buttonClick0" style="-fx-background-color: #0171DC;" text="+ Add" textFill="WHITE">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Button>
+                              <Text fx:id="prod22" layoutX="424.0" layoutY="188.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cookies" />
+                              <Text fill="#001eff" layoutX="426.0" layoutY="228.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Asile F">
+                                 <font>
+                                    <Font size="12.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="425.0" layoutY="208.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\$7.29">
+                                 <font>
+                                    <Font name="System Bold" size="13.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="484.0" layoutY="166.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-background-color: #fafafa;" wrappingWidth="26.66590118408203" />
+                              <Button fx:id="Button23" layoutX="607.0" layoutY="150.0" mnemonicParsing="false" onAction="#buttonClick0" style="-fx-background-color: #0171DC;" text="+ Add" textFill="WHITE">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Button>
+                              <Text fx:id="prod23" layoutX="607.0" layoutY="188.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bagels" />
+                              <Text fill="#001eff" layoutX="609.0" layoutY="228.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Asile F">
+                                 <font>
+                                    <Font size="12.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="608.0" layoutY="208.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\$6.49">
+                                 <font>
+                                    <Font name="System Bold" size="13.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="467.0" layoutY="166.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-background-color: #fafafa;" wrappingWidth="26.66590118408203" />
+                              <Button fx:id="btn22" layoutX="498.0" layoutY="150.0" mnemonicParsing="false" onAction="#subtractButtonClick0" style="-fx-background-color: #fafafa;" textFill="WHITE">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Button>
+                              <Text layoutX="649.0" layoutY="166.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-background-color: #fafafa;" wrappingWidth="26.66590118408203" />
+                              <Button fx:id="btn23" layoutX="680.0" layoutY="150.0" mnemonicParsing="false" onAction="#subtractButtonClick0" style="-fx-background-color: #fafafa;" textFill="WHITE">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Button>
+                              <TextField fx:id="count20" layoutX="85.0" layoutY="148.0" prefHeight="14.0" prefWidth="28.0" style="-fx-border-color: #ffffff;" />
+                              <TextField fx:id="count21" layoutX="277.0" layoutY="147.0" prefHeight="14.0" prefWidth="28.0" style="-fx-border-color: #ffffff;" />
+                              <TextField fx:id="count22" layoutX="466.0" layoutY="146.0" prefHeight="14.0" prefWidth="28.0" style="-fx-border-color: #ffffff;" />
+                              <TextField fx:id="count23" layoutX="648.0" layoutY="147.0" prefHeight="14.0" prefWidth="28.0" style="-fx-border-color: #ffffff;" />
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
               </tabs>
             </TabPane>
             <Text layoutX="18.0" layoutY="90.0" strokeType="OUTSIDE" strokeWidth="0.0" text="All Products">
@@ -629,7 +750,7 @@
                <graphic>
                   <ImageView fitHeight="18.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../images/cart.png" />
+                        <Image url="@../assets/cart.png" />
                      </image>
                   </ImageView>
                </graphic>
