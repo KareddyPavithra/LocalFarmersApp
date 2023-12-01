@@ -16,7 +16,7 @@ public class Main extends Application {
 			Parent root1 = FXMLLoader.load(getClass().getResource("Login.fxml"));
 			Scene scene1 = new Scene(root1,800,600);
 			primaryStage.setScene(scene1);
-			//primaryStage.getIcons().add(new Image("file:./assets/login2.jpeg"));
+			primaryStage.getIcons().add(new Image("file:./assets/6159448.png"));
 			primaryStage.show();
 		} catch(Exception e) {
 			e.printStackTrace();
