@@ -1,52 +1,43 @@
 package application;
 
-import java.util.ArrayList;
-import java.util.List;
-import org.json.simple.JSONArray;
-import org.json.simple.JSONObject;
-import org.json.simple.parser.JSONParser;
-import org.json.simple.parser.ParseException;
-
+import java.io.FileReader;
+import java.nio.file.*;
+import java.io.IOException;
 import javafx.event.ActionEvent;
-import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.stage.Modality;
+import javafx.stage.Stage;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
-import javafx.scene.control.TextField;
+import javafx.fxml.FXML;
+import javafx.scene.control.*;
+import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
-import javafx.stage.Modality;
-import javafx.stage.Stage;
-
-import java.io.FileReader;
-import java.io.FileWriter;
-import java.io.IOException;
-import java.nio.file.Path;
-import java.nio.file.Paths;
-
+import org.json.simple.JSONObject;
+import org.json.simple.parser.*;
+import java.io.File;
 
 public class LogIn {
 
-	@FXML
-	private TextField usrname;
-	@FXML
-	private TextField pswd;
-	@FXML
-	private Button btn_login;
-	@FXML
-	private ImageView img_login;
-	
+    @FXML
+    private TextField usrname;
+    @FXML
+    private TextField pswd;
+    @FXML
+    private Button btn_login;
+    @FXML
+    private ImageView img_login;
 
-	@FXML
+
+    @FXML
     public void login(ActionEvent e) {
         // File file = new File("login.json");
         // String path = file.getAbsolutePath();
         String username = usrname.getText(), password = pswd.getText();
         JSONParser jsonParser = new JSONParser();
         Object jsonObject;
-        Path path = (Paths.get("Login.json"));
-        
+        Path path = (Paths.get("login.json"));
         try {
             jsonObject = jsonParser.parse(new FileReader(path.toString()));
             JSONObject json = (JSONObject) jsonObject;
@@ -64,7 +55,7 @@ public class LogIn {
                     FXMLLoader fxmlloader = new FXMLLoader(getClass().getResource("Dialog.fxml"));
                     Parent parent = fxmlloader.load();
                     Dialog d_controller = fxmlloader.<Dialog>getController();
-                    //d_controller.setDialogText("Incorrect username/password entered.");
+                    d_controller.setDialogText("Incorrect username/password entered.");
                     Scene scene = new Scene(parent);
                     Stage stage = new Stage();
                     stage.initModality(Modality.APPLICATION_MODAL);
@@ -77,7 +68,7 @@ public class LogIn {
                 FXMLLoader fxmlloader = new FXMLLoader(getClass().getResource("Dialog.fxml"));
                 Parent parent = fxmlloader.load();
                 Dialog d_controller = fxmlloader.<Dialog>getController();
-                //d_controller.setDialogText("User not available, kindly re-enter or register this username.");
+                d_controller.setDialogText("User not available, kindly re-enter or register this username.");
                 Scene scene = new Scene(parent);
                 Stage stage = new Stage();
                 stage.initModality(Modality.APPLICATION_MODAL);
@@ -100,6 +91,5 @@ public class LogIn {
         stage.setScene(scene);
         stage.show();
     }
-	
 
 }
