@@ -374,8 +374,12 @@ public class CartController {
 	}
 
 	public void displayContent() throws FileNotFoundException {
+		
 		Cart shoppingCart = Cart.getInstance();
 		List<Integer> aisles = shoppingCart.getAisles();
+		
+		clearCartUI();
+		
 		int k = 0;
 		for (int i = 0; i < aisles.size(); i++) {
 			int elements = shoppingCart.getCountMap(aisles.get(i)).size();
@@ -389,6 +393,7 @@ public class CartController {
 				Double price = shoppingCart.getCountMap(aisles.get(i)).get(prodNames.get(j)).getQuantity()
 						* shoppingCart.getCountMap(aisles.get(i)).get(prodNames.get(j)).getProduct().getPrice();
 				counter = ((i * 4) + j + (4 * k));
+				
 				image.get(counter).setImage(img);
 				name.get(counter).setText(nm);
 				count.get(counter).setText(String.valueOf(cnt) + "Units");
@@ -399,6 +404,19 @@ public class CartController {
 				k++;
 			}
 		}
+	}
+
+
+	private void clearCartUI() {
+		// TODO Auto-generated method stub
+		
+		for(int i=0; i<24; i++) {
+			image.get(i).setImage(null);
+			name.get(i).setText("");
+			count.get(i).setText("");
+			totalPrice.get(i).setText("");
+		}
+		
 	}
 
 	public void switchToScene1(ActionEvent event) throws IOException {
