@@ -12,12 +12,12 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #fafafa;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.CartController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #fafafa;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.CartController">
 	<children>
 		<AnchorPane layoutX="4.0" layoutY="5.0" prefHeight="590.0" prefWidth="790.0">
 			<children>
 				<Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="49.0" layoutX="-1.0" layoutY="-2.0" stroke="WHITE" strokeType="INSIDE" width="794.0" />
-				<Text fill="WHITE" layoutX="17.0" layoutY="29.0" strokeType="OUTSIDE" strokeWidth="0.0" text="QCheckout">
+				<Text fill="WHITE" layoutX="17.0" layoutY="29.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Checkout">
 					<font>
 						<Font name="System Bold" size="20.0" />
 					</font>
@@ -26,7 +26,7 @@
 				<Button contentDisplay="CENTER" layoutX="644.0" layoutY="10.0" mnemonicParsing="false" onAction="#displayCart" prefHeight="24.0" prefWidth="36.0" style="-fx-background-color: #ffffff;" />
 				<ImageView fitHeight="18.0" fitWidth="18.0" layoutX="653.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
 					<image>
-						<Image url="@../assets/shopping_cart_FILL1_wght400_GRAD0_opsz24.png" />
+						<Image url="@../assets/cart.png" />
 					</image>
 				</ImageView>
 				<Button layoutX="138.0" layoutY="7.0" mnemonicParsing="false" onAction="#switchToScene1" text="Home" />
