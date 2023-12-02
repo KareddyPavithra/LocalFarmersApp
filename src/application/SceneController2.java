@@ -29,7 +29,7 @@ public class SceneController2 {
 	static List<Product> searchList;
 
 	List<TextField> name = new ArrayList<TextField>();
-	List<TextField> aisle = new ArrayList<TextField>();
+	List<TextField> vendor = new ArrayList<TextField>();
 	List<TextField> price = new ArrayList<TextField>();
 	List<ImageView> image = new ArrayList<ImageView>();
 	List<Button> addButton = new ArrayList<Button>();
@@ -39,7 +39,7 @@ public class SceneController2 {
 	@FXML
 	private TextField name0;
 	@FXML
-	private TextField aisle0;
+	private TextField vendor0;
 	@FXML
 	private TextField price0;
 	@FXML
@@ -54,7 +54,7 @@ public class SceneController2 {
 	@FXML
 	private TextField name1;
 	@FXML
-	private TextField aisle1;
+	private TextField vendor1;
 	@FXML
 	private TextField price1;
 	@FXML
@@ -69,7 +69,7 @@ public class SceneController2 {
 	@FXML
 	private TextField name2;
 	@FXML
-	private TextField aisle2;
+	private TextField vendor2;
 	@FXML
 	private TextField price2;
 	@FXML
@@ -84,7 +84,7 @@ public class SceneController2 {
 	@FXML
 	private TextField name3;
 	@FXML
-	private TextField aisle3;
+	private TextField vendor3;
 	@FXML
 	private TextField price3;
 	@FXML
@@ -99,7 +99,7 @@ public class SceneController2 {
 	@FXML
 	private TextField name4;
 	@FXML
-	private TextField aisle4;
+	private TextField vendor4;
 	@FXML
 	private TextField price4;
 	@FXML
@@ -114,7 +114,7 @@ public class SceneController2 {
 	@FXML
 	private TextField name5;
 	@FXML
-	private TextField aisle5;
+	private TextField vendor5;
 	@FXML
 	private TextField price5;
 	@FXML
@@ -129,7 +129,7 @@ public class SceneController2 {
 	@FXML
 	private TextField name6;
 	@FXML
-	private TextField aisle6;
+	private TextField vendor6;
 	@FXML
 	private TextField price6;
 	@FXML
@@ -144,7 +144,7 @@ public class SceneController2 {
 	@FXML
 	private TextField name7;
 	@FXML
-	private TextField aisle7;
+	private TextField vendor7;
 	@FXML
 	private TextField price7;
 	@FXML
@@ -168,11 +168,15 @@ public class SceneController2 {
 	}
 
 	public void printResults(ActionEvent event) throws IOException {
+		
+		System.out.println("Searching ");
+		
 		FXMLLoader loader = new FXMLLoader(getClass().getResource("Main.fxml"));
 		Parent root = loader.load();
 		SceneController ctrl1 = loader.getController();
 	
 
+		
 		searchList = ctrl1.getSearchList();
 		name.add(name0);
 		name.add(name1);
@@ -183,14 +187,14 @@ public class SceneController2 {
 		name.add(name6);
 		name.add(name7);
 		
-		aisle.add(aisle0);
-		aisle.add(aisle1);
-		aisle.add(aisle2);
-		aisle.add(aisle3);
-		aisle.add(aisle4);
-		aisle.add(aisle5);
-		aisle.add(aisle6);
-		aisle.add(aisle7);
+		vendor.add(vendor0);
+		vendor.add(vendor1);
+		vendor.add(vendor2);
+		vendor.add(vendor3);
+		vendor.add(vendor4);
+		vendor.add(vendor5);
+		vendor.add(vendor6);
+		vendor.add(vendor7);
 		
 		price.add(price0);
 		price.add(price1);
@@ -239,16 +243,16 @@ public class SceneController2 {
 		
 		     
 		   
-			for(int i=0; i<searchList.size(); i++) {
+		for(int i=0; i<searchList.size(); i++) {
 			String prodName = searchList.get(i).getName();
-			int aisles = searchList.get(i).getAisle();
+			int vendors = searchList.get(i).getvendor();
 			double prices = searchList.get(i).getPrice();
-			String prodAisle = "Aisle" + Integer.toString(aisles);
+			String prodvendor = "vendor" + Integer.toString(vendors);
 			String prodPrice = "$" + Double.toString(prices);
 			String prodImage = searchList.get(i).getImage();
 			name.get(i).setText(prodName);
 			//name.get(i).setWrapText(true);
-			aisle.get(i).setText(prodAisle);
+			vendor.get(i).setText(prodvendor);
 			price.get(i).setText(prodPrice);
 			addButton.get(i).setText("+");
 			addButton.get(i).setStyle("fx-background-color: #FF0000");
@@ -259,7 +263,7 @@ public class SceneController2 {
 			image.get(i).setImage(img);	
 			
 	}
-    }
+   }
 	
 	
     public void buttonClick(ActionEvent event) throws FileNotFoundException {

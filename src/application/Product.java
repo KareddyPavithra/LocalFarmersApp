@@ -4,15 +4,15 @@ import java.util.List;
 public class Product {
 	
     private String category;
-    private int aisle;
+    private int vendor;
     private String name;
     private double price;
     private int count;
     private String image;
 
-    public Product(String category, int aisle, String name, double price, int count, String image) {
+    public Product(String category, int vendor, String name, double price, int count, String image) {
         this.category = category;
-        this.aisle = aisle;
+        this.vendor = vendor;
         this.name = name;
         this.price = price;
         this.count = count;
@@ -24,8 +24,8 @@ public class Product {
 		return this.category;
 	}
 	
-	public int getAisle() {
-		return this.aisle;
+	public int getvendor() {
+		return this.vendor;
 	}
 	
 	public String getName() {
@@ -53,7 +53,7 @@ public class Product {
 	}
 	
 	public Product getObject() {
-		Product obj = new Product(this.category, this.aisle, this.name, this.price, this.count, this.image);
+		Product obj = new Product(this.category, this.vendor, this.name, this.price, this.count, this.image);
 		return obj;
 	}
 }

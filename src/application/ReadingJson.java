@@ -21,21 +21,21 @@ public class ReadingJson {
 		List<Product> ProdArray = new ArrayList<>();
 		  try {
 			  
-			  jsonObject = jsonParser.parse(new FileReader("./src/application/aisles.json"));
+			  jsonObject = jsonParser.parse(new FileReader("./src/application/vendors.json"));
 			  JSONObject json = (JSONObject) jsonObject;
-			  JSONArray aisles = (JSONArray) json.get("aisles");
-			  for(int i=0; i<aisles.size(); i++) {
-				  JSONObject aisle = (JSONObject) aisles.get(i);
-				  Integer aisleNum = Integer.parseInt((String)aisle.get("number"));
-				  String aisleCategory = (String) aisle.get("category");
-				  JSONArray items = (JSONArray) aisle.get("items");
+			  JSONArray vendors = (JSONArray) json.get("vendors");
+			  for(int i=0; i<vendors.size(); i++) {
+				  JSONObject vendor = (JSONObject) vendors.get(i);
+				  Integer vendorNum = Integer.parseInt((String)vendor.get("number"));
+				  String vendorCategory = (String) vendor.get("category");
+				  JSONArray items = (JSONArray) vendor.get("items");
 				  for(int j=0; j<items.size(); j++) {
 					  JSONObject item = (JSONObject) items.get(j);
 					  String itemName = (String) item.get("name");
 					  Double itemPrice = Double.parseDouble((String)item.get("price"));
 					  Integer itemCount = Integer.parseInt((String) item.get("count"));
 					  String itemImage = (String) item.get("image");
-					  Product p1 = new Product(aisleCategory, aisleNum, itemName, itemPrice, itemCount, itemImage);
+					  Product p1 = new Product(vendorCategory, vendorNum, itemName, itemPrice, itemCount, itemImage);
 					  ProdArray.add(p1);
 				  }
 			  }
