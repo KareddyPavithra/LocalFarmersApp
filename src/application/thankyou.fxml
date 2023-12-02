@@ -12,7 +12,7 @@
          <children>
             <ImageView fitHeight="433.0" fitWidth="715.0" layoutX="38.0" layoutY="138.0">
                <image>
-                  <Image url="@../images/thankyou.png" />
+                  <Image url="@../assets/thankyou.png" />
                </image></ImageView>
             <Button fx:id="back" layoutX="615.0" layoutY="81.0" mnemonicParsing="false" onAction="#back_to_home" prefHeight="25.0" prefWidth="138.0" text="Back To Home">
                <font>
