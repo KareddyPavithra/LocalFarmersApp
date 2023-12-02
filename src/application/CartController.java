@@ -35,17 +35,17 @@ public class CartController {
 	List<Label> labels = new ArrayList<Label>();
 
 	@FXML
-	private Label aisleLabel0;
+	private Label vendorLabel0;
 	@FXML
-	private Label aisleLabel1;
+	private Label vendorLabel1;
 	@FXML
-	private Label aisleLabel2;
+	private Label vendorLabel2;
 	@FXML
-	private Label aisleLabel3;
+	private Label vendorLabel3;
 	@FXML
-	private Label aisleLabel4;
+	private Label vendorLabel4;
 	@FXML
-	private Label aisleLabel5;
+	private Label vendorLabel5;
 
 	@FXML
 	private TextField prodNm0;
@@ -244,12 +244,12 @@ public class CartController {
 	private ImageView img23;
 
 	public void setup() {
-		labels.add(aisleLabel0);
-		labels.add(aisleLabel1);
-		labels.add(aisleLabel2);
-		labels.add(aisleLabel3);
-		labels.add(aisleLabel4);
-		labels.add(aisleLabel5);
+		labels.add(vendorLabel0);
+		labels.add(vendorLabel1);
+		labels.add(vendorLabel2);
+		labels.add(vendorLabel3);
+		labels.add(vendorLabel4);
+		labels.add(vendorLabel5);
 
 		image.add(img0);
 		image.add(img1);
@@ -354,21 +354,21 @@ public class CartController {
 	}
 
 	public void displayCart() throws FileNotFoundException {
-		displayAisleLabel();
+		displayvendorLabel();
 		displayContent();
 
 	}
 
-	public void displayAisleLabel() {
+	public void displayvendorLabel() {
 		setup();
 		Cart shoppingCart = Cart.getInstance();
-		List<Integer> aisles = shoppingCart.getAisles();
-		aisleLabel0.setText("Aisle " + aisles.get(0));
-		for (int i = 0; i < aisles.size() - 1; i++) {
-			if (shoppingCart.getCountMap(aisles.get(i)).size() > 4) {
-				labels.get(i + 2).setText("Aisle " + aisles.get(i + 1));
+		List<Integer> vendors = shoppingCart.getvendors();
+		vendorLabel0.setText("vendor " + vendors.get(0));
+		for (int i = 0; i < vendors.size() - 1; i++) {
+			if (shoppingCart.getCountMap(vendors.get(i)).size() > 4) {
+				labels.get(i + 2).setText("vendor " + vendors.get(i + 1));
 			} else {
-				labels.get(i + 1).setText("Aisle " + aisles.get(i + 1));
+				labels.get(i + 1).setText("vendor " + vendors.get(i + 1));
 			}
 		}
 	}
@@ -376,22 +376,22 @@ public class CartController {
 	public void displayContent() throws FileNotFoundException {
 		
 		Cart shoppingCart = Cart.getInstance();
-		List<Integer> aisles = shoppingCart.getAisles();
+		List<Integer> vendors = shoppingCart.getvendors();
 		
 		clearCartUI();
 		
 		int k = 0;
-		for (int i = 0; i < aisles.size(); i++) {
-			int elements = shoppingCart.getCountMap(aisles.get(i)).size();
+		for (int i = 0; i < vendors.size(); i++) {
+			int elements = shoppingCart.getCountMap(vendors.get(i)).size();
 			for (int j = 0; j < elements; j++) {
-				List<String> prodNames = shoppingCart.getProductNames(aisles.get(i));
+				List<String> prodNames = shoppingCart.getProductNames(vendors.get(i));
 				InputStream stream = new FileInputStream((System.getProperty("user.dir") + "/src/assets/"
-						+ shoppingCart.getCountMap(aisles.get(i)).get(prodNames.get(j)).getProduct().getImage()));
+						+ shoppingCart.getCountMap(vendors.get(i)).get(prodNames.get(j)).getProduct().getImage()));
 				Image img = new Image(stream);
-				String nm = shoppingCart.getCountMap(aisles.get(i)).get(prodNames.get(j)).getProduct().getName();
-				Integer cnt = shoppingCart.getCountMap(aisles.get(i)).get(prodNames.get(j)).getQuantity();
-				Double price = shoppingCart.getCountMap(aisles.get(i)).get(prodNames.get(j)).getQuantity()
-						* shoppingCart.getCountMap(aisles.get(i)).get(prodNames.get(j)).getProduct().getPrice();
+				String nm = shoppingCart.getCountMap(vendors.get(i)).get(prodNames.get(j)).getProduct().getName();
+				Integer cnt = shoppingCart.getCountMap(vendors.get(i)).get(prodNames.get(j)).getQuantity();
+				Double price = shoppingCart.getCountMap(vendors.get(i)).get(prodNames.get(j)).getQuantity()
+						* shoppingCart.getCountMap(vendors.get(i)).get(prodNames.get(j)).getProduct().getPrice();
 				counter = ((i * 4) + j + (4 * k));
 				
 				image.get(counter).setImage(img);

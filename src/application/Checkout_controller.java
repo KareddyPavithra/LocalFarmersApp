@@ -34,7 +34,7 @@ public class Checkout_controller {
 	private TextField tot;
 	@FXML
 	private Button bill;
-	private static String path=((Paths.get("aisles.json")).toAbsolutePath()).toString();
+	private static String path=((Paths.get("vendors.json")).toAbsolutePath()).toString();
 	
 	public void checkout(ActionEvent event) {
 		displayTotalCost();
@@ -56,17 +56,17 @@ public class Checkout_controller {
 	
 	public void countUpdation() {
 		Cart shoppingCart = Cart.getInstance();
-		List<Integer> aisles = shoppingCart.getAisles();
-		for(int i=0; i<aisles.size(); i++) {
-			int elements = shoppingCart.getCountMap(aisles.get(i)).size();
+		List<Integer> vendors = shoppingCart.getvendors();
+		for(int i=0; i<vendors.size(); i++) {
+			int elements = shoppingCart.getCountMap(vendors.get(i)).size();
 			for(int j=0; j<elements; j++) {
-				List<String> prodNames = shoppingCart.getProductNames(aisles.get(i));
-				int initCount = shoppingCart.getCountMap(aisles.get(i)).get(prodNames.get(j)).getProduct().getCount();
-				int countToBeSub = shoppingCart.getCountMap(aisles.get(i)).get(prodNames.get(j)).getQuantity();
+				List<String> prodNames = shoppingCart.getProductNames(vendors.get(i));
+				int initCount = shoppingCart.getCountMap(vendors.get(i)).get(prodNames.get(j)).getProduct().getCount();
+				int countToBeSub = shoppingCart.getCountMap(vendors.get(i)).get(prodNames.get(j)).getQuantity();
 				System.out.println(initCount - countToBeSub);
-				shoppingCart.getCountMap(aisles.get(i)).get(prodNames.get(j)).getProduct().setCount(initCount - countToBeSub);
-				shoppingCart.getCountMap(aisles.get(i)).get(prodNames.get(j)).resetQuantity();
-				//jsonUpdate(aisles.get(i), prodNames.get(j),initCount - countToBeSub);
+				shoppingCart.getCountMap(vendors.get(i)).get(prodNames.get(j)).getProduct().setCount(initCount - countToBeSub);
+				shoppingCart.getCountMap(vendors.get(i)).get(prodNames.get(j)).resetQuantity();
+				//jsonUpdate(vendors.get(i), prodNames.get(j),initCount - countToBeSub);
 			}
 		}
 	}
@@ -83,14 +83,14 @@ public class Checkout_controller {
 		JSONParser jsonParser = new JSONParser();
 		Object jsonObject;
 	      try {
-	         jsonObject = jsonParser.parse(new FileReader("C:\\Users\\18574\\eclipse-workspace\\MyTest\\src\\application\\aisles.json"));
+	         jsonObject = jsonParser.parse(new FileReader("C:\\Users\\18574\\eclipse-workspace\\MyTest\\src\\application\\vendors.json"));
 	         JSONObject json = (JSONObject) jsonObject;
-	         JSONArray aisles = (JSONArray) json.get("aisles");
-	         for (int i=0; i<aisles.size(); i++) {
-	        	 JSONObject aisle = (JSONObject) aisles.get(i);
-	        	 Integer aisleNum  = Integer.parseInt((String)aisle.get("number"));
-	        	 if (aisleNum == asl){
-	        		 JSONArray items = (JSONArray) aisle.get("items");
+	         JSONArray vendors = (JSONArray) json.get("vendors");
+	         for (int i=0; i<vendors.size(); i++) {
+	        	 JSONObject vendor = (JSONObject) vendors.get(i);
+	        	 Integer vendorNum  = Integer.parseInt((String)vendor.get("number"));
+	        	 if (vendorNum == asl){
+	        		 JSONArray items = (JSONArray) vendor.get("items");
 	        		 for (int j=0; j<items.size(); j++) {
 			        	 JSONObject item = (JSONObject) items.get(j);
 			        	 String itemName = (String) item.get("name");
@@ -101,7 +101,7 @@ public class Checkout_controller {
 			        		 System.out.println(item.get("count"));
 			        		 System.out.println(newCount);
 			        		 System.out.println(item);
-			        		 Writer file = new FileWriter("C:\\Users\\18574\\eclipse-workspace\\MyTest\\src\\application\\aisles.json", false);
+			        		 Writer file = new FileWriter("C:\\Users\\18574\\eclipse-workspace\\MyTest\\src\\application\\vendors.json", false);
 			     			 file.write(item.toJSONString());
 			     			 file.flush();
 			     			 file.close();

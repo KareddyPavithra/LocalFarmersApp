@@ -44,7 +44,7 @@ import java.util.Set;
 import java.util.TreeMap;
 
 public class Cart {
-	private TreeMap<Integer, TreeMap<String, CartEntry>> aisleMap;
+	private TreeMap<Integer, TreeMap<String, CartEntry>> vendorMap;
 	private TreeMap<String, CartEntry> countMap;
 	private static Cart INSTANCE;
 
@@ -56,36 +56,36 @@ public class Cart {
 	}
 
 	public Cart() {
-		this.aisleMap = new TreeMap<Integer, TreeMap<String, CartEntry>>();
+		this.vendorMap = new TreeMap<Integer, TreeMap<String, CartEntry>>();
 
 	}
 
 	public void addProduct(String productName) throws FileNotFoundException {
 		Product prod = fetchProduct(productName);
-		Integer aisle = prod.getAisle();
-		if (aisleMap.containsKey(aisle) == false) {
+		Integer vendor = prod.getvendor();
+		if (vendorMap.containsKey(vendor) == false) {
 			countMap = new TreeMap<String, CartEntry>();
-			aisleMap.put(aisle, countMap);
+			vendorMap.put(vendor, countMap);
 		}
-		CartEntry entry = aisleMap.get(aisle).get(productName);
+		CartEntry entry = vendorMap.get(vendor).get(productName);
 		if (entry != null) {
 			entry.increaseQuantity();
 		} else {
 			CartEntry newEntry = new CartEntry(prod, 1);
-			aisleMap.get(aisle).put(productName, newEntry);
+			vendorMap.get(vendor).put(productName, newEntry);
 		}
 	}
 
 	public void deleteProduct(String productName) throws FileNotFoundException {
 		Product prod = fetchProduct(productName);
-		Integer aisle = prod.getAisle();
-		CartEntry entry = aisleMap.get(aisle).get(productName);
+		Integer vendor = prod.getvendor();
+		CartEntry entry = vendorMap.get(vendor).get(productName);
 		if (entry != null) {
 			entry.decreaseQuantity();
 			if (entry.getQuantity() == 0) {
-				aisleMap.get(aisle).remove(productName);
-				if (aisleMap.get(aisle).isEmpty()) {
-					aisleMap.remove(aisle);
+				vendorMap.get(vendor).remove(productName);
+				if (vendorMap.get(vendor).isEmpty()) {
+					vendorMap.remove(vendor);
 				}
 			}
 		}
@@ -104,8 +104,8 @@ public class Cart {
 
 	public int getQuantity(String productName) throws FileNotFoundException {
 		Product prod = fetchProduct(productName);
-		Integer aisle = prod.getAisle();
-		CartEntry entry = aisleMap.get(aisle).get(productName);
+		Integer vendor = prod.getvendor();
+		CartEntry entry = vendorMap.get(vendor).get(productName);
 		if (entry != null) {
 			return entry.getQuantity();
 		}
@@ -114,37 +114,37 @@ public class Cart {
 
 	public double calculateTotal() {
 		double total = 0;
-		Set<Integer> aisleKeys = aisleMap.keySet();
+		Set<Integer> vendorKeys = vendorMap.keySet();
 		List<Integer> aList = new ArrayList<Integer>();
-		aList.addAll(aisleKeys);
+		aList.addAll(vendorKeys);
 
 		for (int i = 0; i < aList.size(); i++) {
-			for (CartEntry c : aisleMap.get(aList.get(i)).values()) {
+			for (CartEntry c : vendorMap.get(aList.get(i)).values()) {
 				total = total + (c.getProduct().getPrice() * c.getQuantity());
 			}
 		}
 		return total;
 	}
 
-	public List<Integer> getAisles() {
-		Set<Integer> aisleKeys = aisleMap.keySet();
+	public List<Integer> getvendors() {
+		Set<Integer> vendorKeys = vendorMap.keySet();
 		List<Integer> aList = new ArrayList<Integer>();
-		aList.addAll(aisleKeys);
+		aList.addAll(vendorKeys);
 		return aList;
 	}
 
-	public List<String> getProductNames(Integer aisle) {
-		Set<String> prodNameKeys = getCountMap(aisle).keySet();
+	public List<String> getProductNames(Integer vendor) {
+		Set<String> prodNameKeys = getCountMap(vendor).keySet();
 		List<String> pList = new ArrayList<String>();
 		pList.addAll(prodNameKeys);
 		return pList;
 	}
 
-	public TreeMap<Integer, TreeMap<String, CartEntry>> getAisleMap() {
-		return this.aisleMap;
+	public TreeMap<Integer, TreeMap<String, CartEntry>> getvendorMap() {
+		return this.vendorMap;
 	}
 
-	public TreeMap<String, CartEntry> getCountMap(Integer aisle) {
-		return this.aisleMap.get(aisle);
+	public TreeMap<String, CartEntry> getCountMap(Integer vendor) {
+		return this.vendorMap.get(vendor);
 	}
 }
