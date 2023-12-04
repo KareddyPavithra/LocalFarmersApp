@@ -6,9 +6,9 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane minHeight="650.0" minWidth="800.0" style="-fx-background-color: darkblue;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Thankyou_controller">
+<AnchorPane minHeight="650.0" minWidth="800.0" style="-fx-background-color: #9ae280;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Thankyou_controller">
    <children>
-      <AnchorPane layoutX="5.0" layoutY="5.0" minHeight="640.0" minWidth="790.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #f7f9fa;" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0">
+      <AnchorPane layoutX="5.0" layoutY="5.0" minHeight="640.0" minWidth="790.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #2ed99b;" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0">
          <children>
             <ImageView fitHeight="433.0" fitWidth="715.0" layoutX="38.0" layoutY="138.0">
                <image>
