@@ -16,7 +16,7 @@
 	<children>
 		<AnchorPane layoutX="4.0" layoutY="5.0" prefHeight="590.0" prefWidth="790.0">
 			<children>
-				<Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="49.0" layoutX="-1.0" layoutY="-2.0" stroke="WHITE" strokeType="INSIDE" width="794.0" />
+				<Rectangle arcHeight="5.0" arcWidth="5.0" fill="#69dd37" height="49.0" layoutX="-1.0" layoutY="-2.0" stroke="WHITE" strokeType="INSIDE" width="794.0" />
 				<Text fill="WHITE" layoutX="17.0" layoutY="29.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Checkout">
 					<font>
 						<Font name="System Bold" size="20.0" />

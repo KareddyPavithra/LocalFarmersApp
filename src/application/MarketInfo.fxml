@@ -5,16 +5,16 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MarketInfo_Controller">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #2ed99b;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MarketInfo_Controller">
     <children>
-        <Label layoutX="200.0" layoutY="40.0" prefHeight="30.0" prefWidth="200.0" text="Market Information">
+        <Label layoutX="161.0" layoutY="33.0" prefHeight="35.0" prefWidth="256.0" text="Market Information">
             <font>
-                <Font size="18.0" />
+                <Font name="System Bold Italic" size="24.0" />
             </font>
         </Label>
-        <Label layoutX="50.0" layoutY="90.0" prefWidth="500.0" text="Welcome to our market! We're open on weekdays with the following schedule:">
+        <Label layoutX="50.0" layoutY="90.0" prefWidth="500.0" text="Welcome to Our Market! We're open on weekdays with the following schedule:">
             <font>
-                <Font size="14.0" />
+                <Font name="System Italic" size="14.0" />
             </font>
         </Label>
         <Label layoutX="50.0" layoutY="120.0" prefWidth="500.0" text="Monday: 8am - 12pm">
@@ -42,6 +42,11 @@
                 <Font size="14.0" />
             </font>
         </Label>
-        <Button layoutX="266.0" layoutY="266.0" mnemonicParsing="false" onAction="#closeMarketInfo" text="Close" />
+        <Label layoutX="50.0" layoutY="234.0" prefWidth="500.0" text="Location: 360 Huntington Ave, Boston, MA">
+            <font>
+                <Font name="System Bold Italic" size="14.0" />
+            </font>
+        </Label>
+        <Button layoutX="266.0" layoutY="283.0" mnemonicParsing="false" onAction="#closeMarketInfo" text="Close" />
     </children>
 </AnchorPane>
