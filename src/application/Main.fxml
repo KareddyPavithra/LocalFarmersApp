@@ -745,6 +745,7 @@
                   <Font size="20.0" />
                </font>
             </Text>
+            <Button contentDisplay="CENTER" layoutX="556.0" layoutY="10.0" mnemonicParsing="false" onAction="#showMarketInfo" prefHeight="26.0" prefWidth="100.0" style="-fx-background-color: #ffffff;" text="MarketInfo" />
             <Button contentDisplay="CENTER" layoutX="700.0" layoutY="10.0" mnemonicParsing="false" onAction="#switchToCheckout" prefHeight="26.0" prefWidth="76.0" style="-fx-background-color: #ffffff;" text="Checkout" />
             <Button contentDisplay="CENTER" layoutX="660.0" layoutY="10.0" mnemonicParsing="false" onAction="#switchToCart" prefHeight="24.0" prefWidth="36.0" style="-fx-background-color: #ffffff;">
                <graphic>

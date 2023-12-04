@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MarketInfo_Controller">
+    <children>
+        <Label layoutX="200.0" layoutY="40.0" prefHeight="30.0" prefWidth="200.0" text="Market Information">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <Label layoutX="50.0" layoutY="90.0" prefWidth="500.0" text="Welcome to our market! We're open on weekdays with the following schedule:">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <Label layoutX="50.0" layoutY="120.0" prefWidth="500.0" text="Monday: 8am - 12pm">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <Label layoutX="50.0" layoutY="140.0" prefWidth="500.0" text="Tuesday: 7.30am - 11.30am">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <Label layoutX="50.0" layoutY="160.0" prefWidth="500.0" text="Wednesday: 8am - 12.30pm">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <Label layoutX="50.0" layoutY="180.0" prefWidth="500.0" text="Thursday: 5pm - 8pm">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <Label layoutX="50.0" layoutY="200.0" prefWidth="500.0" text="Friday: 5pm - 8pm">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <Button layoutX="266.0" layoutY="266.0" mnemonicParsing="false" onAction="#closeMarketInfo" text="Close" />
+    </children>
+</AnchorPane>

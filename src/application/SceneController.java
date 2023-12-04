@@ -12,6 +12,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 import javafx.scene.text.Text;
@@ -24,6 +25,10 @@ public class SceneController {
 	private Stage stage;
 	private Scene scene;
 	private Parent root;
+	
+	@FXML
+	private Button marketInfoButton;
+
 	@FXML
 	private TextField Srch;
 	String searchStr;
@@ -302,6 +307,26 @@ public class SceneController {
 		stage.show();
 	}
 	
+	public void showMarketInfo(ActionEvent event) throws IOException {
+	    try {
+	        FXMLLoader loader = new FXMLLoader(getClass().getResource("MarketInfo.fxml"));
+	        Parent root = loader.load();
+
+	        MarketInfo_Controller marketInfoController = loader.getController();
+	        Stage marketInfoStage = new Stage();
+	        marketInfoStage.setTitle("Market Information");
+	        marketInfoStage.setScene(new Scene(root));
+
+	   
+	        marketInfoController.setStage(marketInfoStage);
+
+	        marketInfoStage.show();
+	    } catch (IOException e) {
+	        e.printStackTrace();
+	    }
+	}
+
+	
 	public String searchField() {
 		searchStr = Srch.getText();
 		return searchStr;
@@ -440,7 +465,11 @@ public class SceneController {
 		addButton.add(Button27);
 		addButton.add(Button28);
 		addButton.add(Button29);
+
 	}
+	
+
+
 
 	public void buttonClick0(ActionEvent event) throws FileNotFoundException {
 		setup();
