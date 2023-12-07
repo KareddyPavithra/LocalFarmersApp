@@ -11,19 +11,19 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.LogIn">
    <children>
-      <ImageView fitHeight="776.0" fitWidth="960.0" layoutX="-160.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="-176.0" AnchorPane.leftAnchor="-160.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <ImageView fitHeight="699.0" fitWidth="1258.0" layoutX="-458.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="-99.0" AnchorPane.leftAnchor="-458.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <image>
-            <Image url="@../assets/loginbackground.jpg" />
+            <Image url="@../assets/logbackfin.jpg" />
          </image>
       </ImageView>
       <AnchorPane layoutX="16.0" layoutY="35.0" prefHeight="591.0" prefWidth="817.0" style="-fx-background-image: url('@../assets/Login.jpg');">
          <children>
-            <Label layoutX="312.0" layoutY="169.0" text="Username" textFill="#d9a832">
+            <Label layoutX="312.0" layoutY="169.0" text="Username" textFill="#141414">
                <font>
                   <Font size="16.0" />
                </font>
             </Label>
-            <Label layoutX="325.0" layoutY="258.0" text="Password" textFill="#d9a832">
+            <Label layoutX="314.0" layoutY="258.0" text="Password" textFill="#121211">
                <font>
                   <Font size="16.0" />
                </font>
@@ -31,11 +31,16 @@
             <PasswordField fx:id="pswd" layoutX="260.0" layoutY="291.0" prefHeight="38.0" prefWidth="234.0" />
             <TextField fx:id="usrname" layoutX="261.0" layoutY="201.0" prefHeight="38.0" prefWidth="233.0" />
             <Button fx:id="login_btn" layoutX="264.0" layoutY="357.0" mnemonicParsing="false" onAction="#login" prefHeight="32.0" prefWidth="237.0" style="-fx-background-color: #0171DC;" text="Log In" textFill="WHITE" />
-            <Label layoutX="314.0" layoutY="419.0" text="Don't have an account?" textFill="#d29845" />
+            <Label layoutX="314.0" layoutY="419.0" text="Don't have an account?" textFill="#0b0b0b" />
             <Button fx:id="btn_register" layoutX="334.0" layoutY="455.0" mnemonicParsing="false" onAction="#register" style="-fx-background-color: #ffffff; -fx-border-color: #0171DC; -fx-border-radius: 2;" text="Register Now" textFill="#0171dc" />
-            <Label layoutX="312.0" layoutY="110.0" text="Log In" textFill="#d9a832">
+            <Label layoutX="312.0" layoutY="110.0" text="Log In" textFill="#040404">
                <font>
                   <Font name="System Bold" size="28.0" />
+               </font>
+            </Label>
+            <Label layoutX="146.0" layoutY="21.0" prefHeight="70.0" prefWidth="511.0" text="Local Farmers Market" textFill="#8f3410">
+               <font>
+                  <Font name="System Bold" size="48.0" />
                </font>
             </Label>
          </children>

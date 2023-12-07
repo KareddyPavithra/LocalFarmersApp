@@ -15,7 +15,7 @@
    <children>
       <AnchorPane layoutX="4.0" layoutY="5.0" prefHeight="590.0" prefWidth="790.0">
          <children>
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#d25100" height="49.0" layoutX="-1.0" layoutY="-2.0" stroke="WHITE" strokeType="INSIDE" width="794.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#188d1e" height="49.0" layoutX="-1.0" layoutY="-2.0" stroke="WHITE" strokeType="INSIDE" width="794.0" />
             <Text fill="WHITE" layoutX="17.0" layoutY="29.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Local Farmer's App">
                <font>
                   <Font name="System Bold" size="20.0" />
@@ -27,9 +27,14 @@
               <tabs>
                   <Tab text="Fruits">
                      <content>
-                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #2ed99b;">
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                            <children>
-                              <ImageView fitHeight="110.0" fitWidth="120.0" layoutX="44.0" layoutY="34.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                              <ImageView fitHeight="564.0" fitWidth="871.0" layoutX="-26.0" layoutY="-66.66666666666667" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="-41.09625244140625" AnchorPane.leftAnchor="-26.0" AnchorPane.rightAnchor="-53.0" AnchorPane.topAnchor="-67.0">
+                                 <image>
+                                    <Image url="@../assets/fruitweb.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="110.0" fitWidth="545.0" layoutX="44.0" layoutY="34.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
                                  <image>
                                     <Image url="@../assets/Appless.jpeg" />
                                  </image>
@@ -144,8 +149,13 @@
                   </Tab>
                 <Tab text="Vegetables">
                   <content>
-                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #2ed99b;">
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                            <children>
+                              <ImageView fitHeight="492.0" fitWidth="835.0" layoutX="-6.0" layoutY="-23.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../assets/veggies.png" />
+                                 </image>
+                              </ImageView>
                               <ImageView fitHeight="103.0" fitWidth="120.0" layoutX="42.0" layoutY="33.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
                                  <image>
                                     <Image url="@../assets/tomato.jpeg" />
@@ -260,8 +270,12 @@
                 </Tab>
                   <Tab text="Dairy">
                      <content>
-                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #2ed99b;">
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                            <children>
+                              <ImageView fitHeight="631.0" fitWidth="1232.0" layoutX="-391.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../assets/milkback.png" />
+                                 </image></ImageView>
                               <ImageView fitHeight="110.0" fitWidth="120.0" layoutX="44.0" layoutY="34.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
                                  <image>
                                     <Image url="@../assets/milk.jpeg" />
@@ -377,8 +391,13 @@
                   </Tab>
                   <Tab text="Meat">
                      <content>
-                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #2ed99b;">
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                            <children>
+                              <ImageView fitHeight="535.0" fitWidth="872.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../assets/meatbac.jpg" />
+                                 </image>
+                              </ImageView>
                               <ImageView fitHeight="110.0" fitWidth="120.0" layoutX="39.0" layoutY="58.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
                                  <image>
                                     <Image url="@../assets/chicken.jpeg" />
@@ -498,8 +517,13 @@
                   </Tab>
                   <Tab text="Flowers">
                      <content>
-                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #2ed99b;">
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                            <children>
+                              <ImageView fitHeight="579.0" fitWidth="867.0" layoutX="-1.0" layoutY="-102.0" pickOnBounds="true" preserveRatio="true" rotate="180.0">
+                                 <image>
+                                    <Image url="@../assets/flowersback.jpg" />
+                                 </image>
+                              </ImageView>
                               <ImageView fitHeight="110.0" fitWidth="120.0" layoutX="29.0" layoutY="36.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
                                  <image>
                                     <Image url="@../assets/roses.jpg" />
@@ -619,8 +643,13 @@
                   </Tab>
                   <Tab text="Bakery">
                      <content>
-                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #2ed99b;">
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                            <children>
+                              <ImageView fitHeight="537.0" fitWidth="890.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../assets/bakeryback.jpeg" />
+                                 </image>
+                              </ImageView>
                               <ImageView fitHeight="110.0" fitWidth="120.0" layoutX="44.0" layoutY="34.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
                                  <image>
                                     <Image url="@../assets/bread.jpg" />
