@@ -8,13 +8,13 @@
 
 <AnchorPane minHeight="650.0" minWidth="800.0" style="-fx-background-color: #9ae280;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Thankyou_controller">
    <children>
-      <AnchorPane layoutX="5.0" layoutY="5.0" minHeight="640.0" minWidth="790.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #2ed99b;" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0">
+      <AnchorPane layoutX="5.0" layoutY="5.0" minHeight="640.0" minWidth="790.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0">
          <children>
-            <ImageView fitHeight="433.0" fitWidth="715.0" layoutX="38.0" layoutY="138.0">
+            <ImageView fitHeight="661.0" fitWidth="824.0" layoutX="-22.0" layoutY="-15.0">
                <image>
-                  <Image url="@../assets/thankyou.png" />
+                  <Image url="@../assets/thankspage.png" />
                </image></ImageView>
-            <Button fx:id="back" layoutX="615.0" layoutY="81.0" mnemonicParsing="false" onAction="#back_to_home" prefHeight="25.0" prefWidth="138.0" text="Back To Home">
+            <Button fx:id="back" layoutX="25.0" layoutY="27.0" mnemonicParsing="false" onAction="#back_to_home" prefHeight="25.0" prefWidth="138.0" text="Home">
                <font>
                   <Font name="Arial Italic" size="14.0" />
                </font></Button>
