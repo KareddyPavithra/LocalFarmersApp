@@ -22,8 +22,16 @@
 
 ## Screenshots
 
+
+This is the login page of our application:
 ![Login page](https://github.com/KareddyPavithra/LocalFarmersApp/blob/main/src/LFM%20App%20images/Login%20page.png)
+
+This is the home page where the customer can browse various products:
 ![Vegetables page](https://github.com/KareddyPavithra/LocalFarmersApp/blob/main/src/LFM%20App%20images/Vegetables%20page.png)
+
+This is the checkout page:
 ![Checkout page](https://github.com/KareddyPavithra/LocalFarmersApp/blob/main/src/LFM%20App%20images/Checkout%20page.png)
+
+In this page, the market information is displayed:
 ![Market Info page](https://github.com/KareddyPavithra/LocalFarmersApp/blob/main/src/LFM%20App%20images/Market%20Info%20page.png)
 
