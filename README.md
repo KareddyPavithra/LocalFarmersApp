@@ -22,5 +22,8 @@
 
 ## Screenshots
 
-
+![Login page](https://github.com/KareddyPavithra/LocalFarmersApp/blob/main/src/LFM%20App%20images/Login%20page.png)
+![Vegetables page](https://github.com/KareddyPavithra/LocalFarmersApp/blob/main/src/LFM%20App%20images/Vegetables%20page.png)
+![Checkout page](https://github.com/KareddyPavithra/LocalFarmersApp/blob/main/src/LFM%20App%20images/Checkout%20page.png)
+![Market Info page](https://github.com/KareddyPavithra/LocalFarmersApp/blob/main/src/LFM%20App%20images/Market%20Info%20page.png)
 
